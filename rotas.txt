@@ -1,0 +1,78 @@
+São Paulo;Rio de Janeiro
+São Paulo;Buenos Aires
+São Paulo;Santiago
+São Paulo;Lima
+São Paulo;Bogotá
+São Paulo;Cidade do México
+São Paulo;Nova York
+São Paulo;Toronto
+São Paulo;Londres
+São Paulo;Paris
+São Paulo;Madrid
+São Paulo;Roma
+São Paulo;Dubai
+São Paulo;Joanesburgo
+Rio de Janeiro;Buenos Aires
+Rio de Janeiro;Santiago
+Rio de Janeiro;Nova York
+Rio de Janeiro;Londres
+Rio de Janeiro;Paris
+Buenos Aires;Santiago
+Buenos Aires;Lima
+Buenos Aires;Bogotá
+Buenos Aires;Cidade do México
+Buenos Aires;Nova York
+Buenos Aires;Roma
+Santiago;Lima
+Santiago;Bogotá
+Santiago;Cidade do México
+Santiago;Sydney
+Lima;Bogotá
+Lima;Cidade do México
+Lima;Nova York
+Lima;Los Angeles
+Bogotá;Cidade do México
+Bogotá;Nova York
+Cidade do México;Nova York
+Cidade do México;Toronto
+Cidade do México;Los Angeles
+Cidade do México;Londres
+Cidade do México;Paris
+Cidade do México;Madrid
+Nova York;Toronto
+Nova York;Los Angeles
+Nova York;Londres
+Nova York;Paris
+Nova York;Madrid
+Nova York;Dubai
+Toronto;Londres
+Los Angeles;Londres
+Los Angeles;Paris
+Los Angeles;Tóquio
+Los Angeles;Sydney
+Londres;Paris
+Londres;Madrid
+Londres;Roma
+Londres;Dubai
+Londres;Cairo
+Londres;Tóquio
+Londres;Pequim
+Londres;Sydney
+Londres;Joanesburgo
+Paris;Madrid
+Paris;Roma
+Paris;Dubai
+Paris;Cairo
+Paris;Tóquio
+Paris;Pequim
+Paris;Joanesburgo
+Madrid;Roma
+Madrid;Dubai
+Dubai;Cairo
+Dubai;Tóquio
+Dubai;Pequim
+Dubai;Sydney
+Dubai;Joanesburgo
+Cairo;Pequim
+Tóquio;Pequim
+Tóquio;Sydney
