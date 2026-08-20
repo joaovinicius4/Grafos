@@ -1,65 +1,101 @@
-\# Grafos - Rotas Aéreas
+# Grafos — Rotas Aéreas
 
 Projeto desenvolvido para a disciplina de Grafos da Universidade Estadual de Montes Claros (Unimontes).
 
-\## Objetivo
+## Objetivo
 
-Representar rotas aéreas entre 20 cidades do mundo utilizando um grafo e uma matriz de adjacência.
+Representar rotas aéreas entre 20 cidades do mundo por meio de um grafo não direcionado e de uma matriz de adjacência.
 
-O projeto também permite verificar se existe um caminho entre duas cidades, desconsiderando o sentido das rotas.
+O programa consulta o Google Gemini para obter uma lista de rotas aéreas diretas, constrói o grafo e permite ao usuário escolher duas cidades. Em seguida, verifica se existe um caminho entre elas, desconsiderando o sentido das rotas, e destaca em vermelho o menor caminho encontrado.
 
-\## Cidades
+## Cidades
 
-O projeto utiliza as seguintes 20 cidades:
+- São Paulo
+- Rio de Janeiro
+- Buenos Aires
+- Santiago
+- Lima
+- Bogotá
+- Cidade do México
+- Nova York
+- Toronto
+- Los Angeles
+- Londres
+- Paris
+- Madrid
+- Roma
+- Dubai
+- Cairo
+- Tóquio
+- Pequim
+- Sydney
+- Joanesburgo
 
-CIDADES
-0 - São Paulo
-1 - Rio de Janeiro
-2 - Buenos Aires
-3 - Santiago
-4 - Lima
-5 - Bogotá
-6 - Cidade do México
-7 - Nova York
-8 - Toronto
-9 - Los Angeles
-10 - Londres
-11 - Paris
-12 - Madrid
-13 - Roma
-14 - Dubai
-15 - Cairo
-16 - Tóquio
-17 - Pequim
-18 - Sydney
-19 - Joanesburgo
+## Tecnologias utilizadas
 
-\## Tecnologias utilizadas
+- Python
+- Google Gemini API
+- NetworkX
+- Matplotlib
 
-\- Python
+## Como executar
 
-\- Google Gemini API
+### 1. Pré-requisitos
 
-\- NetworkX
+Instale o Python 3 e obtenha uma chave de API do Google Gemini.
 
-\- Matplotlib
+### 2. Crie e ative um ambiente virtual
 
-\## Funcionamento
+No PowerShell, dentro da pasta do projeto, execute:
 
-O projeto utiliza um Large Language Model (LLM) para obter informações sobre rotas aéreas comerciais entre as cidades.
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
 
-As rotas são utilizadas para construir uma matriz de adjacência:
+### 3. Instale as dependências
 
-\- `1` indica que existe uma rota direta entre duas cidades.
+```powershell
+pip install -r requirements.txt
+```
 
-\- `0` indica que não existe uma rota direta.
+### 4. Configure a chave da API
 
-Como as rotas são consideradas sem sentido, o grafo é não direcionado.
+Crie um arquivo chamado `.env` na raiz do projeto:
 
-Exemplo:
+```env
+MINHA_CHAVE=sua_chave_do_gemini
+```
+
+### 5. Execute o programa
+
+```powershell
+python Rotas.py
+```
+
+O programa consultará o Gemini, salvará as rotas recebidas em `rotas.txt`, imprimirá a matriz de adjacência e apresentará a lista numerada das cidades.
+
+Escolha a origem e o destino digitando o índice ou o nome completo da cidade:
 
 ```text
-
-São Paulo → Londres
-
+Cidade de origem (indice ou nome): São Paulo
+Cidade de destino (indice ou nome): Tóquio
 ```
+
+Se existir um caminho, o terminal mostrará a sequência de cidades e uma janela será aberta com o grafo. Todas as rotas aparecerão em cinza e as arestas do caminho encontrado aparecerão em vermelho.
+
+## Matriz de adjacência
+
+Na matriz:
+
+- `1` indica que existe uma rota direta entre as duas cidades;
+- `0` indica que não existe uma rota direta.
+
+Como o sentido das rotas é desconsiderado, a matriz é simétrica: se existe uma ligação entre as cidades `i` e `j`, tanto `matriz[i][j]` quanto `matriz[j][i]` recebem o valor `1`.
+
+## Arquivos principais
+
+- `Rotas.py`: consulta as rotas, cria a matriz e o grafo, procura o caminho e gera a visualização;
+- `rotas.txt`: armazena a resposta mais recente recebida do Gemini;
+- `requirements.txt`: lista as dependências necessárias;
+- `.env`: contém a chave da API local e não é versionado.
