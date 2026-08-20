@@ -20,36 +20,42 @@ Rio de Janeiro;Paris
 Buenos Aires;Santiago
 Buenos Aires;Lima
 Buenos Aires;Bogotá
-Buenos Aires;Cidade do México
 Buenos Aires;Nova York
 Buenos Aires;Roma
 Santiago;Lima
 Santiago;Bogotá
 Santiago;Cidade do México
-Santiago;Sydney
+Santiago;Madrid
 Lima;Bogotá
 Lima;Cidade do México
 Lima;Nova York
 Lima;Los Angeles
+Lima;Madrid
 Bogotá;Cidade do México
 Bogotá;Nova York
+Bogotá;Londres
+Bogotá;Madrid
 Cidade do México;Nova York
 Cidade do México;Toronto
 Cidade do México;Los Angeles
 Cidade do México;Londres
 Cidade do México;Paris
 Cidade do México;Madrid
+Cidade do México;Tóquio
 Nova York;Toronto
 Nova York;Los Angeles
 Nova York;Londres
 Nova York;Paris
 Nova York;Madrid
+Nova York;Roma
 Nova York;Dubai
+Nova York;Cairo
+Nova York;Tóquio
 Toronto;Londres
 Los Angeles;Londres
 Los Angeles;Paris
-Los Angeles;Tóquio
 Los Angeles;Sydney
+Los Angeles;Tóquio
 Londres;Paris
 Londres;Madrid
 Londres;Roma
@@ -65,9 +71,10 @@ Paris;Dubai
 Paris;Cairo
 Paris;Tóquio
 Paris;Pequim
-Paris;Joanesburgo
 Madrid;Roma
 Madrid;Dubai
+Madrid;Cairo
+Roma;Dubai
 Dubai;Cairo
 Dubai;Tóquio
 Dubai;Pequim
@@ -76,3 +83,4 @@ Dubai;Joanesburgo
 Cairo;Pequim
 Tóquio;Pequim
 Tóquio;Sydney
+Pequim;Sydney
